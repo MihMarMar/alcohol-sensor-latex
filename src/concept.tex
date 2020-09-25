@@ -3,12 +3,4 @@
 
 The goal is to make a sensor that measures alcohol concentration in a liquid.
 Water and alcohol have different physical attributes, and by measuring the liquid's properties we can determine what mixture of water to alcohol it contains.
-Such sensors already exist by measuring the buoyancy of the liquid to determine the mixture proportions.
-However, such sensors involve more mechanics than electronics.
-Therefore, the sensor system will work on a different principle - the liquid's dielectric constant.
-
-A software defined radio (SDR) will be used to transmit radio signals of a varying frequency from an antenna that is submerged in the tested liquid.
-Another antenna will be attached to the SDR and it will be used to receive the transmitted radio signals.
-From the attenuation and phase shift of the radio signals caused by the liquid, its relative permittivity can be determined and thus its dielectric constant.
-This dielectric constant can be used to determine what the ratio of alcohol to water is, as the permittivity is a function of the proportion of alcohol to water in the liquid.
-The calculations will be done in software on the PC that is connected to the SDR.
+The sensor system will work on the principle of observing the behaviour of radio waves which pass through the mixture.
